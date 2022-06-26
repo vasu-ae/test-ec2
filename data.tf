@@ -1,5 +1,8 @@
 data "aws_vpc" "my-vpc" {
-    default = "vpc-db576dbf"
+    filter {
+    name   = "tag:Name"
+    values = ["MAIN VPC"]
+  } 
 }
 
 data "aws_subnet" "public-subnet-1" {
