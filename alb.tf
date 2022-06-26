@@ -38,7 +38,7 @@ resource "aws_lb" "my-elb" {
   load_balancer_type = "application"
   enable_cross_zone_load_balancing =  true
   security_groups    = [aws_security_group.api_elb_sg.id]
-  subnets            = [ data.aws_subnet.public-subnet-3.id,data.aws_subnet.public-subnet-4.id]
+  subnets            = [ data.aws_subnet.public-subnet-1.id,data.aws_subnet.public-subnet-2.id]
 
   enable_deletion_protection = false
   

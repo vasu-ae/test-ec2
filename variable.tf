@@ -10,6 +10,7 @@ variable "ami" {
 
 variable "ins_type" {
     description = "free tier type"
+    default = "t2.micro"
   
 }
 
