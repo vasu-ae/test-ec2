@@ -2,7 +2,7 @@
 resource "aws_launch_template" "my-temp" {
   name = "my-template"
   image_id  = var.ami
-  instance_type = var.ins-type
+  instance_type = var.ins_type
   key_name = var.ins-key
   network_interfaces {
   security_groups = [aws_security_group.my-sg.id]
