@@ -1,10 +1,10 @@
 variable "region" {
-    description = "production env"
+    default = "us-east-1"
   
 }
 
 variable "ami" {
-    description = "test"
+    default = "ami-0cff7528ff583bf9a"
 
 }
 
