@@ -4,7 +4,8 @@ variable "region" {
 }
 
 variable "ami" {
-    default = "ami-0cff7528ff583bf9a"
+    # default = "ami-0cff7528ff583bf9a"
+    description = "my ami"
 
 }
 
